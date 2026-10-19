@@ -1,22 +1,15 @@
-# Mi Ciclo — Publicación gratuita
+# Mi Ciclo 4.0 — Actualización PWA
 
-Aplicación menstrual offline-first de uso personal, sin servidor, con cifrado local. **Este repositorio debe contener solamente el código de la app, NO respaldos ni registros personales.**
+Actualización sobre la versión 3.2, manteniendo `localStorage` (`mi_ciclo_v3_encrypted`) y formato cifrado `version:3`. No elimina, reinicializa ni envía registros a ningún servidor.
 
-## Publicar en GitHub Pages
+## Instalación en GitHub Pages
 
-1. Guarda un **respaldo cifrado** desde tu versión anterior de Mi Ciclo y conserva la contraseña.
-2. Inicia sesión en https://github.com/ y crea un repositorio **público** llamado `mi-ciclo-app` (o el nombre que prefieras).
-3. En el repositorio, usa **Add file > Upload files** y sube **los archivos de esta carpeta** al nivel principal del repositorio, no la carpeta ni el archivo ZIP. Confirma con **Commit changes**.
-4. En **Settings > Pages**, elige **Deploy from a branch**, rama **main**, carpeta **/(root)**, y guarda.
-5. Cuando GitHub indique la URL, ingresa a `https://TU-USUARIO.github.io/mi-ciclo-app/` (sustituye usuario y nombre real del repositorio). Comprueba que funcione el acceso, el calendario y el respaldo.
-6. **Importa el respaldo cifrado** desde la pantalla de acceso del sitio nuevo. Comprueba todos los registros y evita borrar la copia original.
-7. Para Android: abre la web con Chrome y elige **Instalar aplicación** o **Añadir a pantalla de inicio** desde su menú. En iPhone: abre Safari > Compartir > **Añadir a pantalla de inicio** > **Abrir como app**, si aparece.
+1. Antes de actualizar, **abre la versión 3.2 en cada teléfono y descarga un respaldo cifrado**; verifica que esté guardado y conserva la contraseña.
+2. Ve al repositorio `mi-ciclo-app` de GitHub y reemplaza los archivos `index.html`, `app.js`, `sw.js` y `manifest.webmanifest` con los de este ZIP (los iconos pueden subirse también).
+3. Confirma el commit en `main`, espera el despliegue en **Actions** o **Settings → Pages**.
+4. En Android y iPhone, abre Mi Ciclo y cierra y reabre si sigue mostrando 3.2. Si es necesario recarga la web desde el navegador (sin borrar datos).
+5. Comprueba versión 4.0, historial, estadísticas, desbloqueo y respaldo.
 
-## Notas importantes
+Los cálculos no incluyen intervalos inferiores a 15 ni superiores a 60 días para estimar duración del ciclo. Las estadísticas de flujo y síntomas se basan en los registros diarios guardados. No hay sincronización entre teléfonos. Las notificaciones no funcionan programadas con la app cerrada.
 
-- **La web es pública**, pero no incluye datos personales pregrabados; los registros se almacenan **solo en el navegador/dispositivo** como información cifrada. No subas archivos JSON de respaldo al repositorio.
-- El almacenamiento entre el archivo HTML anterior, Chrome, Safari y una app instalada puede ser **distinto**. Debes importar un respaldo cuando corresponda.
-- No existe sincronización entre equipos. Desinstalar la app o borrar datos del sitio puede eliminar los registros locales.
-- Los avisos se muestran al abrir la app; no hay recordatorios automáticos con la app cerrada.
-- Las estimaciones del ciclo no sirven como método anticonceptivo ni diagnóstico.
-- Al actualizar el código en GitHub, no cambies el dominio/ruta del sitio si deseas conservar el mismo almacenamiento.
+No subas respaldos ni datos de salud a un repositorio público. La contraseña no puede restablecerse sin acceso a un respaldo recuperable.
