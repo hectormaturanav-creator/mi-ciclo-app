@@ -1,11 +1,15 @@
-# Mi Ciclo 4.3 — PWA
+# Mi Ciclo 4.3.1 — correcciones
 
-Actualización de interfaz sobre Mi Ciclo 4.2. Incluye Inicio compacto, ajustes de privacidad en diálogo accesible, resumen descriptivo de variabilidad de ciclos e ícono vectorial de ajustes.
+- Encabezado con margen superior compatible con iPhone instalado (área segura).
+- Estadísticas: el mensaje de variación se sincroniza con los intervalos dibujados en el gráfico.
+- Ajustes y privacidad organizados en tres apartados desplegables.
+- Se mantiene intacto `app.js`, el formato cifrado y la clave del almacenamiento de 4.3.
+- Caché PWA renovada con versión 4.3.1.
 
-## Instalación
-1. Descarga un respaldo cifrado desde cada dispositivo.
-2. Sube TODOS los archivos individuales de este paquete a la raíz del repositorio GitHub Pages existente (incluido `ui43.js`), reemplazando los anteriores.
-3. Espera la publicación, cierra la PWA y vuelve a abrirla. No borres datos, no reinstales ni elimines el almacenamiento.
-4. Confirma versión 4.3 y verifica contraseña, historial, ajustes y estadísticas.
+## Actualización
+1. Crear y conservar un respaldo cifrado en **cada** dispositivo.
+2. Subir **todos** los archivos a la raíz del mismo repositorio GitHub Pages (no subir el ZIP), reemplazar y confirmar.
+3. Esperar publicación, cerrar y reabrir la aplicación. Si muestra una versión antigua, actualizar desde el sitio publicado sin borrar datos.
+4. Comprobar historial, contraseña, calendario, estadísticas y el menú de ajustes.
 
-Los datos siguen cifrados localmente con el mismo formato; cada dispositivo guarda su propio historial. La fecha estimada no es un método anticonceptivo.
+No desinstalar ni borrar almacenamiento local para forzar la actualización.
