@@ -1,1 +1,7 @@
-Mi Ciclo 4.5.1 — actualización correctiva. Copia los archivos a la raíz del repositorio existente. Antes de actualizar, exporta un respaldo cifrado. Corrige el control de dolor con barra deslizante y la visualización de la selección de flujo, ánimo y energía. No modifica el formato de datos ni el cifrado. No elimines datos de la PWA para actualizarla.
+# Mi Ciclo 4.5.2 — Período en curso y confirmar fin
+
+Incluye el botón «Confirmar primer día» y «Confirmar fin del período». Al confirmar el fin, pide de nuevo la contraseña y conserva el período en el historial cifrado.
+
+IMPORTANTE: La clave de cifrado solo se conserva en memoria; iOS/Android pueden cerrar la PWA y pedir contraseña incluso durante un período en curso. No se implementa desbloqueo sin contraseña tras reinicios.
+
+Antes de actualizar, realiza un respaldo cifrado desde cada dispositivo. Sube todos los archivos a la raíz de GitHub Pages. No borres datos del navegador ni desinstales la PWA.
