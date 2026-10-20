@@ -1,8 +1,10 @@
-Mi Ciclo 4.5.9 — Corrección de estadísticas.
+# Mi Ciclo 4.5.10 — refinamiento visual
 
-- Ajuste de carga de visual458.js antes de app.js.
-- Anillos y matriz se actualizan al desbloquear y al modificar registros.
-- Gráfico de dolor lineal solo con 2 o más registros reales.
-- Mantiene el almacenamiento cifrado y todos los registros.
+Actualización de presentación basada en 4.5.9. No modifica el formato de datos cifrados, los cálculos ni los controles de guardado.
 
-Antes de actualizar, realizar respaldo cifrado desde la aplicación. Subir el contenido de esta carpeta a la raíz del repositorio GitHub Pages. No borrar datos del navegador ni desinstalar.
+- Gráficos de duración más compactos, con guías suaves y nuevas tonalidades.
+- Matriz de flujo con desplazamiento horizontal interno para evitar cortes.
+- Gráfica de dolor más pequeña cuando solo existe un registro.
+- Ajustes de espaciado, tarjetas y claridad visual.
+
+Antes de publicar, genera un respaldo cifrado de cada dispositivo. Sube todos los archivos a la raíz del repositorio GitHub Pages sin borrar el almacenamiento local. Prueba las estadísticas con datos reales en iPhone y Android.
