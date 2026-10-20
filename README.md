@@ -20,3 +20,7 @@ Mantiene `mi_ciclo_v3_encrypted`, el mismo cifrado y formato de respaldo de 4.0.
 
 ## Personalización
 El encabezado muestra el nombre de usuario debajo de Mi Ciclo. La opción Personalizar nombre guarda el nombre dentro del mismo registro cifrado AES-GCM. El nombre se conserva en los respaldos y puede cambiarse desde la aplicación.
+
+
+## Corrección de posición del encabezado
+Se corrigió la estructura HTML: el encabezado queda al principio del área principal, antes de Inicio, Calendario, Registrar y Estadísticas. La navegación inferior permanece fija. No se modificó el formato de datos cifrados.
