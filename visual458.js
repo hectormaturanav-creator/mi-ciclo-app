@@ -30,3 +30,24 @@ window.renderVisual458=function(data){
   for(let i=0;i<maxDays;i++){let cell=mk('span','v458-day-cell');if(i<count){let d=new Date(start+i*86400000).toISOString().slice(0,10);let v=daily.get(d)?.flow;if(['Ninguno','Manchado','Leve','Moderado','Abundante'].includes(v)){cell.dataset.flow=v;cell.title=d+': '+v}else cell.title=d+': sin registro diario'}else{cell.style.opacity='.28';cell.title='Fuera del período'}row.append(cell)}root.append(row)
  }
 };
+
+(function(){
+  const old=window.renderVisual458;
+  window.renderVisual458=function(data){
+    old(data);
+    const points=(data.daily||[]).filter(r=>r.date&&Number.isInteger(r.pain)&&r.pain>=0&&r.pain<=10).sort((a,b)=>a.date.localeCompare(b.date)).slice(-10);
+    const box=document.getElementById('wellnessPainChart');
+    if(!box||points.length<2)return;
+    const w=335,h=172,p={l:25,r:12,t:14,b:33};
+    const x=i=>p.l+(w-p.l-p.r)*(i/(points.length-1));
+    const y=v=>h-p.b-(h-p.t-p.b)*v/10;
+    const ns='http://www.w3.org/2000/svg';
+    const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.setAttribute('role','img');svg.setAttribute('aria-label','Evolución de dolor diario de cero a diez con fechas reales');svg.classList.add('v459-plot');
+    function el(tag,attrs,txt){const z=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs||{}))z.setAttribute(k,v);if(txt!==undefined)z.textContent=txt;svg.append(z);return z}
+    for(const v of [0,5,10]){const Y=y(v);el('line',{x1:p.l,x2:w-p.r,y1:Y,y2:Y,stroke:'#eadde8','stroke-dasharray':'3 4'});el('text',{x:3,y:Y+4},String(v))}
+    const path=points.map((r,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(r.pain).toFixed(1)).join(' ');
+    el('path',{d:path,fill:'none',stroke:'#a55c8d','stroke-width':3,'stroke-linejoin':'round','stroke-linecap':'round'});
+    for(let i=0;i<points.length;i++){const pt=points[i];el('circle',{cx:x(i),cy:y(pt.pain),r:4,fill:'#b86b9a',stroke:'#fff','stroke-width':2});if(i===0||i===points.length-1||points.length<=5)el('text',{x:x(i),y:h-10,'text-anchor':'middle'},pt.date.slice(5).replace('-','/'))}
+    box.replaceChildren(svg);
+  };
+})();
