@@ -1,15 +1,11 @@
-# Mi Ciclo 4.3.1 — correcciones
+# Mi Ciclo 4.4 — PWA
 
-- Encabezado con margen superior compatible con iPhone instalado (área segura).
-- Estadísticas: el mensaje de variación se sincroniza con los intervalos dibujados en el gráfico.
-- Ajustes y privacidad organizados en tres apartados desplegables.
-- Se mantiene intacto `app.js`, el formato cifrado y la clave del almacenamiento de 4.3.
-- Caché PWA renovada con versión 4.3.1.
+Actualización de la versión 4.3.1. Se añade un resumen orientativo de la próxima menstruación en Inicio y avisos explícitos de estimación provisional. Conserva la clave `mi_ciclo_v3_encrypted`, el formato de respaldo y el cifrado AES-GCM de las versiones previas. Los datos siguen siendo locales, por dispositivo.
 
-## Actualización
-1. Crear y conservar un respaldo cifrado en **cada** dispositivo.
-2. Subir **todos** los archivos a la raíz del mismo repositorio GitHub Pages (no subir el ZIP), reemplazar y confirmar.
-3. Esperar publicación, cerrar y reabrir la aplicación. Si muestra una versión antigua, actualizar desde el sitio publicado sin borrar datos.
-4. Comprobar historial, contraseña, calendario, estadísticas y el menú de ajustes.
+## Instalación
+1. Genera un respaldo cifrado en cada dispositivo.
+2. En GitHub, sube todos los archivos de esta carpeta a la raíz del mismo repositorio, **incluido `ui44.js`**.
+3. Espera GitHub Pages y vuelve a abrir la app instalada. **No desinstales ni borres datos**.
+4. Comprueba contraseña, historial, encabezado v4.4 y resumen de Inicio.
 
-No desinstalar ni borrar almacenamiento local para forzar la actualización.
+Las estimaciones no son diagnósticos ni anticonceptivos.
