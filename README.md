@@ -1,15 +1,22 @@
-# Mi Ciclo 4.0 — Actualización PWA
+# Mi Ciclo 4.1 — PWA con pestañas inferiores
 
-Actualización sobre la versión 3.2, manteniendo `localStorage` (`mi_ciclo_v3_encrypted`) y formato cifrado `version:3`. No elimina, reinicializa ni envía registros a ningún servidor.
+## Actualizar desde 4.0
 
-## Instalación en GitHub Pages
+1. En **cada dispositivo**, descarga un respaldo cifrado y conserva la contraseña.
+2. No desinstales la PWA ni borres los datos del sitio.
+3. En el repositorio `mi-ciclo-app`, sube el contenido de esta carpeta (archivos en la raíz). Asegúrate de incluir el archivo **nuevo `nav.js`**.
+4. Confirma los cambios y espera que GitHub Pages publique la nueva versión.
+5. Abre la dirección HTTPS de Mi Ciclo y verifica que se muestre `v4.1`, las cuatro pestañas y tu historial anterior.
+6. Si sigue mostrando 4.0, cierra y vuelve a abrir la app con conexión; no limpies el almacenamiento.
 
-1. Antes de actualizar, **abre la versión 3.2 en cada teléfono y descarga un respaldo cifrado**; verifica que esté guardado y conserva la contraseña.
-2. Ve al repositorio `mi-ciclo-app` de GitHub y reemplaza los archivos `index.html`, `app.js`, `sw.js` y `manifest.webmanifest` con los de este ZIP (los iconos pueden subirse también).
-3. Confirma el commit en `main`, espera el despliegue en **Actions** o **Settings → Pages**.
-4. En Android y iPhone, abre Mi Ciclo y cierra y reabre si sigue mostrando 3.2. Si es necesario recarga la web desde el navegador (sin borrar datos).
-5. Comprueba versión 4.0, historial, estadísticas, desbloqueo y respaldo.
+### Navegación
+- **Inicio:** resumen, accesos rápidos, recordatorios y privacidad.
+- **Calendario:** vista mensual y ambos historiales; al seleccionar fecha puedes ir a Registrar.
+- **Registrar:** período y registro diario, edición desde historiales.
+- **Estadísticas:** gráficos y tendencias existentes.
 
-Los cálculos no incluyen intervalos inferiores a 15 ni superiores a 60 días para estimar duración del ciclo. Las estadísticas de flujo y síntomas se basan en los registros diarios guardados. No hay sincronización entre teléfonos. Las notificaciones no funcionan programadas con la app cerrada.
+### Privacidad
+Mantiene `mi_ciclo_v3_encrypted`, el mismo cifrado y formato de respaldo de 4.0. Los datos siguen separados por dispositivo; GitHub aloja solo código público, nunca el respaldo cifrado ni la contraseña.
 
-No subas respaldos ni datos de salud a un repositorio público. La contraseña no puede restablecerse sin acceso a un respaldo recuperable.
+## Personalización
+El encabezado muestra el nombre de usuario debajo de Mi Ciclo. La opción Personalizar nombre guarda el nombre dentro del mismo registro cifrado AES-GCM. El nombre se conserva en los respaldos y puede cambiarse desde la aplicación.
