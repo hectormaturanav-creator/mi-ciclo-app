@@ -1,7 +1,14 @@
-# Mi Ciclo 4.5.6 — Corrección de fotografía de perfil
+# Mi Ciclo 4.5.7 — Renovación visual, etapa 3
 
-Actualización correctiva sobre 4.5.5: selección de fotos de iPhone y Android, intento de lectura de HEIC/HEIF cuando el navegador los admite, conversión a JPEG 180 × 180 y mensaje de error cuando el formato no se puede abrir.
+- Fotografía circular de 64 px en móvil y 72 px en pantallas más grandes, preservando la misma imagen cifrada.
+- Estadísticas: tarjetas, gráficos y bloques de tendencias con presentación renovada.
+- Ajustes: menú y ventana de privacidad con estilos más consistentes.
+- No se han modificado app.js, profile455.js ni los formatos de datos cifrados.
 
-**Antes de publicar:** realiza respaldo cifrado desde la app instalada. Sube los archivos del ZIP a la raíz del mismo repositorio de GitHub Pages y espera la actualización. No borres cachés ni datos de la app.
+## Publicación
+1. Respaldar el historial cifrado en cada dispositivo.
+2. Subir todos los archivos de esta carpeta a la raíz del repositorio GitHub Pages.
+3. Esperar la publicación y verificar v4.5.7; no desinstalar ni limpiar almacenamiento.
+4. Probar fotografía, historial, estadísticas, ajustes, registro y restauración con respaldo de prueba.
 
-No se modificaron el esquema de cifrado, el contenido de registros ni las contraseñas. La foto se cifra con el resto de la información. Si una imagen HEIC no es compatible con la versión de Safari, conviértela a JPG antes de subirla.
+Nota: se comprobó estructura y sintaxis del paquete, no el comportamiento completo en teléfonos reales.
