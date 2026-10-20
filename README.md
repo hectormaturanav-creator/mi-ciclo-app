@@ -1,14 +1,11 @@
-# Mi Ciclo 4.5.7 — Renovación visual, etapa 3
+# Mi Ciclo 4.5.8 — actualización visual de Estadísticas
 
-- Fotografía circular de 64 px en móvil y 72 px en pantallas más grandes, preservando la misma imagen cifrada.
-- Estadísticas: tarjetas, gráficos y bloques de tendencias con presentación renovada.
-- Ajustes: menú y ventana de privacidad con estilos más consistentes.
-- No se han modificado app.js, profile455.js ni los formatos de datos cifrados.
+Subir todos los archivos del paquete a la raíz del repositorio de GitHub Pages. No desinstalar la PWA ni borrar datos. Realizar respaldo cifrado antes de actualizar.
 
-## Publicación
-1. Respaldar el historial cifrado en cada dispositivo.
-2. Subir todos los archivos de esta carpeta a la raíz del repositorio GitHub Pages.
-3. Esperar la publicación y verificar v4.5.7; no desinstalar ni limpiar almacenamiento.
-4. Probar fotografía, historial, estadísticas, ajustes, registro y restauración con respaldo de prueba.
+- Ícono Estadísticas reemplazado por gráfico de barras SVG.
+- Anillos: promedio de intervalos entre inicios, diferencia entre máximo y mínimo cuando hay al menos dos intervalos válidos y duración media del sangrado. Anillos decorativos, no proporciones clínicas.
+- Matriz de flujo por día con máximo de seis períodos y diez días; SOLO pinta valores diarios guardados. Un período con flujo predominante, pero sin registro por día, tendrá celdas sin color.
+- Mantiene las estadísticas existentes, privacidad local y clave de almacenamiento.
+- No añade servicios externos, ni cambia estructura de datos, contraseña o respaldo cifrado.
 
-Nota: se comprobó estructura y sintaxis del paquete, no el comportamiento completo en teléfonos reales.
+Pendiente: probar en iPhone/Android con los registros cifrados reales y comprobar edición, respaldo y visualización.
