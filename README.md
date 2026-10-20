@@ -1,14 +1,11 @@
-# Mi Ciclo 4.2 — actualización de interfaz
+# Mi Ciclo 4.3 — PWA
 
-Sube todos los archivos de esta carpeta a la raíz de tu repositorio de GitHub Pages, reemplazando los anteriores. No subas el ZIP. Antes, exporta un respaldo cifrado desde **cada dispositivo**.
+Actualización de interfaz sobre Mi Ciclo 4.2. Incluye Inicio compacto, ajustes de privacidad en diálogo accesible, resumen descriptivo de variabilidad de ciclos e ícono vectorial de ajustes.
 
-## Cambios
-- Encabezado compacto, nombre editable y configuración bajo el engranaje.
-- Accesos directos para registro de período o día.
-- Mensajes de confirmación temporales.
-- Navegación con cuatro pestañas intacta.
+## Instalación
+1. Descarga un respaldo cifrado desde cada dispositivo.
+2. Sube TODOS los archivos individuales de este paquete a la raíz del repositorio GitHub Pages existente (incluido `ui43.js`), reemplazando los anteriores.
+3. Espera la publicación, cierra la PWA y vuelve a abrirla. No borres datos, no reinstales ni elimines el almacenamiento.
+4. Confirma versión 4.3 y verifica contraseña, historial, ajustes y estadísticas.
 
-No se modificaron el nombre de la clave de almacenamiento ni el formato de cifrado. Los datos permanecen locales e independientes entre dispositivos.
-
-## Comprobación
-Verifica el acceso con la contraseña anterior, el historial, el menú ⚙, la selección de los formularios y los respaldos, antes de borrar cualquier copia anterior.
+Los datos siguen cifrados localmente con el mismo formato; cada dispositivo guarda su propio historial. La fecha estimada no es un método anticonceptivo.
